@@ -4,7 +4,7 @@ var WebSocket = require("ws");
 
 if ( process.argv.length <= 2 )
 {
-    console.log('Syntax: webserve <relay server listen port>')
+    console.log('Syntax: wsrserve <relay server listen port>')
 }
 
 else

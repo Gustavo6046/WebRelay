@@ -8,7 +8,7 @@ const common_words = fs.readFileSync(path.join(__dirname, 'commonwords.txt'), 'u
 
 if ( process.argv.length <= 4 )
 {
-    console.log('Syntax: webrelay <local (outlet) listen port> <remote relay address> <ID of server to connect to through relay>')
+    console.log('Syntax: wsrrelay <local (outlet) listen port> <remote relay address> <ID of server to connect to through relay>')
 }
 
 else

@@ -1,6 +1,6 @@
-# WebRelay
+# WSocketRelay
 
-WebRelay is a Websocket-based UDP tunnel toolkit. It contains:
+WSocketRelay is a Websocket-based UDP tunnel toolkit. It contains:
 
 * A server: the script you will run to host a relay server;
 * An exposer: use this to expose YOUR server (aka user server)
@@ -23,7 +23,7 @@ why not just send your user server's IP to someone else?
  * Host the relay server yourself (using ngrok to expose it, if necessary):
 
 ```
-webserve <listen port>
+wsrserve <listen port>
 ```
 
  * Ask someone else to do it for you, while linking them to this page.
@@ -31,17 +31,17 @@ webserve <listen port>
 3) Host your exposer, to relay your user server from and to the relay server:
 
 ```
-webexpose <minimum local client port number (see below)> <relay server address> <your user server's listen port>
+wsrexpose <minimum local client port number (see below)> <relay server address> <your user server's listen port>
 ```
 
 4) The exposer will print out the __Server ID__ to the console. Make sure to send that
 to whoever are your clients!
 
-5) Have your clients get WebRelay, so they can connect its WebRelay client to the
+5) Have your clients get WSocketRelay, so they can connect its WSocketRelay client to the
 user server through the new relay server:
 
 ```
-webconnect <local listen port> <relay server address> <your Server ID>
+wsrconnect <local listen port> <relay server address> <your Server ID>
 ```
 
 6) Have your clients point their client software to their own localhost, at the local

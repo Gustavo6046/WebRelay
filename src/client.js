@@ -8,7 +8,7 @@ const common_words = fs.readFileSync(path.join(__dirname, 'commonwords.txt'), 'u
 
 if ( process.argv.length <= 4 )
 {
-    console.log('Syntax: webexpose <min listen port> <remote address> <desired server (to expose) port> [desired Server ID (defaults to English random)]')
+    console.log('Syntax: wsrexpose <min listen port> <remote address> <desired server (to expose) port> [desired Server ID (defaults to English random)]')
 }
 
 else
