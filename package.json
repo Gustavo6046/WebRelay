@@ -1,0 +1,35 @@
+{
+    "name": "webrelay",
+    "version": "0.1.0",
+    "description": "A HTTP/Websocket relay, capable of exposing your favorite game through that damn NAT wall.",
+    "keywords": [
+        "tunnel",
+        "relay",
+        "http",
+        "websocket",
+        "websockets",
+        "tcp",
+        "udp"
+    ],
+    "bugs": {
+        "url": "https://www.github.com/Gustavo6046/WebRelay/issues",
+        "email": "gugurehermann@gmail.com"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Gustavo R. 'Gustavo6046' Rehermann",
+        "email": "gugurehermann@gmail.com"
+    },
+    "bin": {
+        "webexpose": "./src/client.js",
+        "webrelay": "./src/connect.js",
+        "webserve": "./src/server.js"
+    },
+    "dependencies": {
+        "ws": "^6.1.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Gustavo6046/webRelay.git"
+    }
+}
